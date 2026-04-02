@@ -1,0 +1,61 @@
+{
+  "name": "load-agents",
+  "version": "1.0.0",
+  "description": "CLI tool to discover, search, and install AI agent definitions for Claude Code, Cursor, Codex, Copilot, and more",
+  "main": "src/index.js",
+  "bin": {
+    "load-agents": "bin/load-agents.js"
+  },
+  "scripts": {
+    "start": "node bin/load-agents.js",
+    "scrape": "node src/scraper/index.js",
+    "test": "node --test test/**/*.test.js",
+    "lint": "eslint src/ bin/ test/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cursor",
+    "codex",
+    "copilot",
+    "ai-agents",
+    "agents",
+    "cli",
+    "developer-tools",
+    "coding-assistant",
+    "agent-definitions",
+    "github-copilot"
+  ],
+  "author": "fix2015",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fix2015/load-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fix2015/load-agents/issues"
+  },
+  "homepage": "https://github.com/fix2015/load-agents#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1",
+    "node-fetch": "^2.7.0",
+    "cli-table3": "^0.6.3",
+    "fuzzy": "^0.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-04-02",
+  "sources": [
+    {
+      "id": "copilot-developer",
+      "repo": "ABilenduke/copilot-developer",
+      "path": "agents",
+      "type": "community",
+      "url": "https://github.com/ABilenduke/copilot-developer"
+    },
+    {
+      "id": "anthropics",
+      "repo": "anthropics/skills",
+      "path": "skills",
+      "type": "official",
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "id": "antigravity",
+      "repo": "sickn33/antigravity-awesome-skills",
+      "path": "skills",
+      "type": "community",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills"
+    }
+  ],
+  "agents": [
+    {
+      "name": "code-reviewer",
+      "description": "Performs thorough code reviews with focus on best practices, security, and performance",
+      "tags": ["code-review", "security", "performance"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/code-reviewer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/code-reviewer"
+    },
+    {
+      "name": "debugger",
+      "description": "Systematic debugging agent that identifies root causes and suggests fixes for complex bugs",
+      "tags": ["debugging", "testing"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/debugger.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/debugger"
+    },
+    {
+      "name": "architect",
+      "description": "Software architecture agent for system design, patterns, and scalability planning",
+      "tags": ["architecture", "backend"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/architect.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/architect"
+    },
+    {
+      "name": "devops-engineer",
+      "description": "DevOps agent for CI/CD pipelines, infrastructure as code, and deployment automation",
+      "tags": ["devops", "cloud"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/devops-engineer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/devops-engineer"
+    },
+    {
+      "name": "security-auditor",
+      "description": "Security-focused agent that identifies vulnerabilities, OWASP issues, and recommends hardening measures",
+      "tags": ["security"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/security-auditor.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/security-auditor"
+    },
+    {
+      "name": "api-designer",
+      "description": "RESTful and GraphQL API design agent with focus on consistency, versioning, and documentation",
+      "tags": ["backend", "architecture"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/api-designer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/api-designer"
+    },
+    {
+      "name": "test-writer",
+      "description": "Agent specialized in writing comprehensive unit, integration, and e2e tests",
+      "tags": ["testing"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/test-writer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/test-writer"
+    },
+    {
+      "name": "documentation-writer",
+      "description": "Technical documentation agent for READMEs, API docs, architecture decision records, and guides",
+      "tags": ["documentation"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/documentation-writer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/documentation-writer"
+    },
+    {
+      "name": "pr-reviewer",
+      "description": "Pull request review agent that checks code quality, test coverage, and provides actionable feedback",
+      "tags": ["code-review", "testing"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/pr-reviewer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/pr-reviewer"
+    },
+    {
+      "name": "refactoring-agent",
+      "description": "Code refactoring agent that improves structure, readability, and maintainability without changing behavior",
+      "tags": ["migration", "architecture"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/refactoring-agent.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/refactoring-agent"
+    },
+    {
+      "name": "migration-agent",
+      "description": "Framework and language migration agent for upgrading legacy codebases and dependencies",
+      "tags": ["migration"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/migration-agent.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/migration-agent"
+    },
+    {
+      "name": "performance-optimizer",
+      "description": "Performance optimization agent for profiling, bottleneck detection, and speed improvements",
+      "tags": ["performance", "backend"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/performance-optimizer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/performance-optimizer"
+    },
+    {
+      "name": "accessibility-checker",
+      "description": "Accessibility agent that ensures WCAG compliance, ARIA best practices, and inclusive design",
+      "tags": ["accessibility", "frontend"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/accessibility-checker.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/accessibility-checker"
+    },
+    {
+      "name": "database-designer",
+      "description": "Database design agent for schema modeling, indexing strategies, and query optimization",
+      "tags": ["database", "backend"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/database-designer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/database-designer"
+    },
+    {
+      "name": "fullstack-developer",
+      "description": "Full-stack development agent covering frontend, backend, databases, and deployment",
+      "tags": ["frontend", "backend", "javascript"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/fullstack-developer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/fullstack-developer"
+    },
+    {
+      "name": "frontend-specialist",
+      "description": "Frontend development agent expert in React, Vue, CSS, responsive design, and modern UI patterns",
+      "tags": ["frontend", "javascript"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/frontend-specialist.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/frontend-specialist"
+    },
+    {
+      "name": "backend-specialist",
+      "description": "Backend development agent for APIs, microservices, authentication, and server-side architecture",
+      "tags": ["backend", "architecture"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/backend-specialist.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/backend-specialist"
+    },
+    {
+      "name": "mobile-developer",
+      "description": "Mobile development agent for React Native, Flutter, iOS, and Android applications",
+      "tags": ["mobile", "frontend"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/mobile-developer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/mobile-developer"
+    },
+    {
+      "name": "data-scientist",
+      "description": "Data science agent for analysis, visualization, statistical modeling, and data pipelines",
+      "tags": ["ai", "python"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/data-scientist.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/data-scientist"
+    },
+    {
+      "name": "ml-engineer",
+      "description": "Machine learning engineer agent for model training, evaluation, deployment, and MLOps",
+      "tags": ["ai", "python"],
+      "source": "copilot-developer",
+      "compatible": ["claude-code", "copilot", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/ABilenduke/copilot-developer/main/agents/ml-engineer.md",
+      "repo_url": "https://github.com/ABilenduke/copilot-developer/tree/main/agents/ml-engineer"
+    },
+    {
+      "name": "react-expert",
+      "description": "React development agent with expertise in hooks, context, performance, and modern patterns",
+      "tags": ["frontend", "javascript"],
+      "source": "anthropics",
+      "compatible": ["claude-code", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/react-expert/SKILL.md",
+      "repo_url": "https://github.com/anthropics/skills/tree/main/skills/react-expert"
+    },
+    {
+      "name": "typescript-strict",
+      "description": "TypeScript agent enforcing strict type safety, generics, and advanced type patterns",
+      "tags": ["javascript", "frontend", "backend"],
+      "source": "anthropics",
+      "compatible": ["claude-code", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/typescript-strict/SKILL.md",
+      "repo_url": "https://github.com/anthropics/skills/tree/main/skills/typescript-strict"
+    },
+    {
+      "name": "python-expert",
+      "description": "Python development agent with expertise in async, type hints, testing, and Pythonic patterns",
+      "tags": ["python", "backend"],
+      "source": "anthropics",
+      "compatible": ["claude-code", "cursor", "codex"],
+      "raw_url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/python-expert/SKILL.md",
+      "repo_url": "https://github.com/anthropics/skills/tree/main/skills/python-expert"
+    },
+    {
+      "name": "docker-specialist",
+      "description": "Docker and containerization agent for Dockerfiles, compose, multi-stage builds, and optimization",
+      "tags": ["devops", "cloud"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/docker-specialist/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/docker-specialist"
+    },
+    {
+      "name": "kubernetes-agent",
+      "description": "Kubernetes agent for cluster management, helm charts, deployments, and troubleshooting",
+      "tags": ["devops", "cloud"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/kubernetes-agent/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/kubernetes-agent"
+    },
+    {
+      "name": "aws-architect",
+      "description": "AWS cloud architecture agent for service selection, cost optimization, and infrastructure design",
+      "tags": ["cloud", "devops", "architecture"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/aws-architect/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/aws-architect"
+    },
+    {
+      "name": "terraform-expert",
+      "description": "Terraform infrastructure as code agent for provisioning, modules, and state management",
+      "tags": ["devops", "cloud"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/terraform-expert/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/terraform-expert"
+    },
+    {
+      "name": "graphql-designer",
+      "description": "GraphQL schema design agent for types, resolvers, subscriptions, and federation",
+      "tags": ["backend", "architecture"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/graphql-designer/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/graphql-designer"
+    },
+    {
+      "name": "rust-developer",
+      "description": "Rust development agent for ownership, lifetimes, async, and systems programming best practices",
+      "tags": ["rust", "backend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/rust-developer/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/rust-developer"
+    },
+    {
+      "name": "go-developer",
+      "description": "Go development agent for idiomatic Go, concurrency patterns, and microservice development",
+      "tags": ["go", "backend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/go-developer/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/go-developer"
+    },
+    {
+      "name": "nextjs-expert",
+      "description": "Next.js development agent for app router, server components, ISR, and deployment strategies",
+      "tags": ["frontend", "javascript"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/nextjs-expert/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/nextjs-expert"
+    },
+    {
+      "name": "cicd-pipeline",
+      "description": "CI/CD pipeline agent for GitHub Actions, GitLab CI, Jenkins, and deployment automation",
+      "tags": ["devops"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/cicd-pipeline/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/cicd-pipeline"
+    },
+    {
+      "name": "prompt-engineer",
+      "description": "Prompt engineering agent for crafting effective LLM prompts, chains, and evaluation strategies",
+      "tags": ["ai"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/prompt-engineer/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/prompt-engineer"
+    },
+    {
+      "name": "rag-architect",
+      "description": "RAG system architect agent for embeddings, vector stores, retrieval strategies, and LLM integration",
+      "tags": ["ai", "architecture"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/rag-architect/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/rag-architect"
+    },
+    {
+      "name": "playwright-tester",
+      "description": "Playwright testing agent for end-to-end tests, page objects, and cross-browser testing",
+      "tags": ["testing", "frontend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/playwright-tester/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/playwright-tester"
+    },
+    {
+      "name": "java-spring-expert",
+      "description": "Java Spring Boot development agent for REST APIs, JPA, security, and microservice patterns",
+      "tags": ["java", "backend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/java-spring-expert/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/java-spring-expert"
+    },
+    {
+      "name": "git-workflow",
+      "description": "Git workflow agent for branching strategies, conflict resolution, and repository management",
+      "tags": ["devops"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/git-workflow/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/git-workflow"
+    },
+    {
+      "name": "redis-specialist",
+      "description": "Redis agent for caching strategies, data structures, pub/sub, and cluster configuration",
+      "tags": ["database", "backend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/redis-specialist/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/redis-specialist"
+    },
+    {
+      "name": "postgres-expert",
+      "description": "PostgreSQL agent for schema design, query optimization, indexing, and advanced SQL features",
+      "tags": ["database", "backend"],
+      "source": "antigravity",
+      "compatible": ["claude-code", "cursor", "codex", "copilot"],
+      "raw_url": "https://raw.githubusercontent.com/sickn33/antigravity-awesome-skills/main/skills/postgres-expert/SKILL.md",
+      "repo_url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/postgres-expert"
+    }
+  ]
+}
