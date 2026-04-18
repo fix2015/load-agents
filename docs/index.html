@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>load-agents — Discover and install AI agent definitions for Claude Code, Codex, and more</title>
+  <meta name="description" content="Discover and install AI agent definitions for Claude Code, Codex, and more">
+  <meta name="author" content="Vitalii Semianchuk">
+  <meta property="og:title" content="load-agents">
+  <meta property="og:description" content="Discover and install AI agent definitions for Claude Code, Codex, and more">
+  <meta property="og:url" content="https://fix2015.github.io/load-agents">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <button class="hamburger" aria-label="Menu">&#9776;</button>
+  <a href="#" class="header-brand"><span>load</span>-agents</a>
+  <div class="header-links">
+    <a href="https://github.com/fix2015/load-agents" target="_blank">GitHub</a>
+    <a href="https://www.npmjs.com/package/load-agents" target="_blank">npm</a>
+  </div>
+</header>
+<div class="sidebar-overlay"></div>
+<nav class="sidebar">
+  <div class="sidebar-group">
+    <div class="sidebar-group-title">Getting Started</div>
+    <a href="#overview">Overview</a>
+    <a href="#quickstart">Quick Start</a>
+  </div>
+  <div class="sidebar-group">
+    <div class="sidebar-group-title">Commands</div>
+    <a href="#install-cmd">Install</a>
+    <a href="#search">Search</a>
+    <a href="#list">List</a>
+    <a href="#info">Info</a>
+    <a href="#tags">Tags</a>
+    <a href="#sources">Sources</a>
+    <a href="#update">Update</a>
+  </div>
+  <div class="sidebar-group">
+    <div class="sidebar-group-title">More</div>
+    <a href="#json">JSON Output</a>
+    <a href="#api">Programmatic API</a>
+  </div>
+</nav>
+<div class="main">
+<div class="hero">
+  <h1>load-agents</h1>
+  <p class="subtitle">Discover and install AI agent definitions for Claude Code, Codex, and more</p>
+  <div class="install-cmd"><code>npx load-agents install &lt;name&gt;</code></div>
+  <div class="hero-buttons">
+    <a href="#quickstart" class="btn btn-primary">Get Started</a>
+    <a href="https://github.com/fix2015/load-agents" target="_blank" class="btn btn-outline">GitHub</a>
+    <a href="https://www.npmjs.com/package/load-agents" target="_blank" class="btn btn-outline">npm</a>
+  </div>
+</div>
+<div class="content">
+<div class="features">
+  <div class="feature-card"><h3>Discover</h3><p>Search and browse AI agents from multiple sources. Filter by tag, source, or compatible tool.</p></div>
+  <div class="feature-card"><h3>Install</h3><p>One command to install any agents for Claude Code, Cursor, Codex, or Gemini CLI.</p></div>
+  <div class="feature-card"><h3>Multi-Tool</h3><p>Works with Claude Code, Cursor, Codex, Gemini CLI. Install globally or per-project.</p></div>
+</div>
+
+<section id="overview">
+  <h1>Getting Started</h1>
+  <h2>Overview</h2>
+  <p>load-agents aggregates AI agents from multiple GitHub sources into a searchable registry. Install any agents with one command — no cloning repos or copying files.</p>
+</section>
+
+<section id="quickstart">
+  <h2>Quick Start</h2>
+  <pre><code class="language-bash"># Install a agents
+npx load-agents install &lt;name&gt;
+
+# Install for Cursor
+npx load-agents install &lt;name&gt; --tool cursor
+
+# Install globally
+npx load-agents install &lt;name&gt; --global
+
+# Search
+npx load-agents search react
+
+# List all
+npx load-agents list</code></pre>
+</section>
+
+<section id="install-cmd">
+  <h1>Commands</h1>
+  <h2>Install</h2>
+  <pre><code class="language-bash">load-agents install &lt;name&gt;                    # Install for Claude Code (default)
+load-agents install &lt;name&gt; --tool cursor       # Install for Cursor
+load-agents install &lt;name&gt; --tool codex        # Install for Codex
+load-agents install &lt;name&gt; --global             # Install globally
+load-agents install &lt;name&gt; -o ./path           # Custom output path</code></pre>
+</section>
+
+<section id="search">
+  <h2>Search</h2>
+  <pre><code class="language-bash">load-agents search react                       # Search by keyword
+load-agents search "api design" --tag backend  # Search with tag filter
+load-agents search react --json                # JSON output</code></pre>
+</section>
+
+<section id="list">
+  <h2>List</h2>
+  <pre><code class="language-bash">load-agents list                                # List all
+load-agents list --tag testing                  # Filter by tag
+load-agents list --tool cursor                  # Filter by tool
+load-agents list --json                         # JSON output</code></pre>
+</section>
+
+<section id="info">
+  <h2>Info</h2>
+  <pre><code class="language-bash">load-agents info &lt;name&gt;                         # Detailed info
+load-agents info &lt;name&gt; --json                 # JSON output</code></pre>
+</section>
+
+<section id="tags">
+  <h2>Tags & Sources</h2>
+  <pre><code class="language-bash">load-agents tags                                # Show all tags with counts
+load-agents sources                             # Show all sources</code></pre>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p>Skills are aggregated from multiple GitHub repositories maintained by the community.</p>
+</section>
+
+<section id="update">
+  <h2>Update Registry</h2>
+  <pre><code class="language-bash">load-agents update                              # Fetch latest from GitHub
+GITHUB_TOKEN=ghp_xxx load-agents update         # With auth for higher rate limits</code></pre>
+</section>
+
+<section id="json">
+  <h2>JSON Output</h2>
+  <pre><code class="language-bash">load-agents list --json
+load-agents search react --json
+load-agents info &lt;name&gt; --json</code></pre>
+  <p>All commands support <code>--json</code> for machine-readable output.</p>
+</section>
+
+<section id="api">
+  <h2>Programmatic API</h2>
+  <pre><code class="language-javascript">const { findSkill, searchSkills, installSkill } = require('load-agents');
+
+const results = searchSkills('react', { tag: 'frontend' });
+const skill = findSkill('react-expert');
+await installSkill(skill, { tool: 'claude-code', global: true });</code></pre>
+</section>
+</div>
+<footer class="footer">
+  <p>load-agents — Discover and install AI agent definitions for Claude Code, Codex, and more</p>
+  <p>Built by Vitalii Semianchuk</p>
+  <p><a href="https://github.com/fix2015/load-agents">GitHub</a> <a href="https://www.npmjs.com/package/load-agents">npm</a></p>
+  <p>MIT License</p>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
